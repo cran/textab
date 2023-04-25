@@ -354,14 +354,14 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <p>Basic character row:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>vec <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;hello&quot;</span>, <span class="st">&quot;world&quot;</span>)</span>
 <span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="fu">TexRow</span>(vec)</span>
-<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Sun Mar 26 19:16:20 2023</span></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Tue Apr 25 07:41:52 2023</span></span>
 <span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="co">#&gt; \begin{tabular}{rr}</span></span>
 <span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="co">#&gt; hello &amp; world \\</span></span>
 <span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="co">#&gt; \end{tabular}</span></span></code></pre></div>
 <p>Character row with LaTeX formatting:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>vec <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&#39;Hello&#39;</span>,<span class="st">&#39;</span><span class="sc">\\</span><span class="st">textbf{World}&#39;</span>,<span class="st">&#39;$</span><span class="sc">\\</span><span class="st">alpha$&#39;</span>,<span class="st">&#39;$</span><span class="sc">\\</span><span class="st">frac{1}{2}$&#39;</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="fu">TexRow</span>(vec)</span>
-<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Sun Mar 26 19:16:20 2023</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Tue Apr 25 07:41:52 2023</span></span>
 <span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="co">#&gt; \begin{tabular}{rrrr}</span></span>
 <span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a><span class="co">#&gt; Hello &amp; \textbf{World} &amp; $\alpha$ &amp; $\frac{1}{2}$ \\</span></span>
 <span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a><span class="co">#&gt; \end{tabular}</span></span></code></pre></div>
@@ -372,14 +372,14 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <p>Basic numeric row:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">1.0</span>, <span class="fl">1.01</span>, <span class="fl">1.001</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="fu">TexRow</span>(vec)</span>
-<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Sun Mar 26 19:16:20 2023</span></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Tue Apr 25 07:41:52 2023</span></span>
 <span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="co">#&gt; \begin{tabular}{rrr}</span></span>
 <span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a><span class="co">#&gt; 1.000 &amp; 1.010 &amp; 1.001 \\</span></span>
 <span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a><span class="co">#&gt; \end{tabular}</span></span></code></pre></div>
 <p>Numeric row rounded to the second decimal place:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">1.0</span>, <span class="fl">1.01</span>, <span class="fl">1.001</span>)</span>
 <span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a><span class="fu">TexRow</span>(vec, <span class="at">dec =</span> <span class="dv">2</span>)</span>
-<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Sun Mar 26 19:16:20 2023</span></span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Tue Apr 25 07:41:52 2023</span></span>
 <span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a><span class="co">#&gt; \begin{tabular}{rrr}</span></span>
 <span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a><span class="co">#&gt; 1.00 &amp; 1.01 &amp; 1.00 \\</span></span>
 <span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a><span class="co">#&gt; \end{tabular}</span></span></code></pre></div>
@@ -411,7 +411,7 @@ number red using the code <code>{\color{red} %s}</code>, where
 each number red, we would specify the following:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>vec <span class="ot">=</span> <span class="fu">c</span>(<span class="fl">5.081</span>, <span class="fl">2.345</span>, <span class="fl">6.789</span>)</span>
 <span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="fu">TexRow</span>(vec, <span class="at">dec =</span> <span class="dv">1</span>, <span class="at">surround =</span> <span class="st">&quot;{</span><span class="sc">\\</span><span class="st">color{red} %s}&quot;</span>)</span>
-<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Sun Mar 26 19:16:20 2023</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Tue Apr 25 07:41:52 2023</span></span>
 <span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="co">#&gt; \begin{tabular}{rrr}</span></span>
 <span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="co">#&gt; {\color{red} 5.1} &amp; {\color{red} 2.3} &amp; {\color{red} 6.8} \\</span></span>
 <span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a><span class="co">#&gt; \end{tabular}</span></span></code></pre></div>
@@ -420,7 +420,7 @@ each number red, we would specify the following:</p>
 well, and we can apply different formatting to each value:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>vec <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;hello&quot;</span>, <span class="st">&quot;world&quot;</span>)</span>
 <span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="fu">TexRow</span>(vec, <span class="at">dec =</span> <span class="dv">1</span>, <span class="at">surround =</span> <span class="fu">c</span>(<span class="st">&quot;{</span><span class="sc">\\</span><span class="st">color{blue} %s}&quot;</span>, <span class="st">&quot;$</span><span class="sc">\\</span><span class="st">frac{</span><span class="sc">\\</span><span class="st">text{%s}}{2}$&quot;</span>))</span>
-<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Sun Mar 26 19:16:20 2023</span></span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Tue Apr 25 07:41:52 2023</span></span>
 <span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="co">#&gt; \begin{tabular}{rr}</span></span>
 <span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a><span class="co">#&gt; {\color{blue} hello} &amp; $\frac{\text{world}}{2}$ \\</span></span>
 <span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a><span class="co">#&gt; \end{tabular}</span></span></code></pre></div>
@@ -431,15 +431,15 @@ well, and we can apply different formatting to each value:</p>
 <code>cspan</code> argument:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a>vec <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;hello&quot;</span>, <span class="st">&quot;world&quot;</span>)</span>
 <span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="fu">TexRow</span>(vec, <span class="at">cspan =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</span>
-<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Sun Mar 26 19:16:20 2023</span></span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Tue Apr 25 07:41:52 2023</span></span>
 <span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a><span class="co">#&gt; \begin{tabular}{rr}</span></span>
-<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a><span class="co">#&gt; hello &amp; \multicolumn{2}{r}{world} \\</span></span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a><span class="co">#&gt; hello &amp; \multicolumn{2}{c}{world} \\</span></span>
 <span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a><span class="co">#&gt; \end{tabular}</span></span></code></pre></div>
 <p>Merge and left-align the second and third rows using the
 <code>position</code> argument:</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a>vec <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;hello&quot;</span>, <span class="st">&quot;world&quot;</span>)</span>
 <span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="fu">TexRow</span>(vec, <span class="at">cspan =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>), <span class="at">position =</span> <span class="st">&quot;l&quot;</span>)</span>
-<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Sun Mar 26 19:16:20 2023</span></span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Tue Apr 25 07:41:52 2023</span></span>
 <span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a><span class="co">#&gt; \begin{tabular}{rr}</span></span>
 <span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a><span class="co">#&gt; hello &amp; \multicolumn{2}{l}{world} \\</span></span>
 <span id="cb11-6"><a href="#cb11-6" tabindex="-1"></a><span class="co">#&gt; \end{tabular}</span></span></code></pre></div>
@@ -447,7 +447,7 @@ well, and we can apply different formatting to each value:</p>
 the second is three-column right-aligned:</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a>vec <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;hello&quot;</span>, <span class="st">&quot;world&quot;</span>)</span>
 <span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a><span class="fu">TexRow</span>(vec, <span class="at">cspan =</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">3</span>), <span class="at">position =</span> <span class="fu">c</span>(<span class="st">&quot;l&quot;</span>,<span class="st">&quot;r&quot;</span>))</span>
-<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Sun Mar 26 19:16:20 2023</span></span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Tue Apr 25 07:41:52 2023</span></span>
 <span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a><span class="co">#&gt; \begin{tabular}{rr}</span></span>
 <span id="cb12-5"><a href="#cb12-5" tabindex="-1"></a><span class="co">#&gt; \multicolumn{2}{l}{hello} &amp; \multicolumn{3}{r}{world} \\</span></span>
 <span id="cb12-6"><a href="#cb12-6" tabindex="-1"></a><span class="co">#&gt; \end{tabular}</span></span></code></pre></div>
@@ -461,7 +461,7 @@ the second is three-column right-aligned:</p>
 <span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a>second_block <span class="ot">=</span> <span class="fu">TexRow</span>(<span class="fu">c</span>(<span class="st">&quot;$</span><span class="sc">\\</span><span class="st">alpha$&quot;</span>,<span class="st">&quot;$</span><span class="sc">\\</span><span class="st">frac{1}{2}$&quot;</span>))</span>
 <span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a>combined_row <span class="ot">=</span> first_block <span class="sc">/</span> second_block</span>
 <span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a>combined_row</span>
-<span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a><span class="co">#&gt; % created using textab on Sun Mar 26 19:16:20 2023</span></span>
+<span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a><span class="co">#&gt; % created using textab on Tue Apr 25 07:41:52 2023</span></span>
 <span id="cb13-6"><a href="#cb13-6" tabindex="-1"></a><span class="co">#&gt; \begin{tabular}{rrrr}</span></span>
 <span id="cb13-7"><a href="#cb13-7" tabindex="-1"></a><span class="co">#&gt; hello &amp; world &amp; $\alpha$ &amp; $\frac{1}{2}$ \\</span></span>
 <span id="cb13-8"><a href="#cb13-8" tabindex="-1"></a><span class="co">#&gt; \end{tabular}</span></span></code></pre></div>
@@ -473,7 +473,7 @@ the second is three-column right-aligned:</p>
 <span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a>second_block <span class="ot">=</span> <span class="fu">TexRow</span>(<span class="fu">c</span>(<span class="st">&quot;$</span><span class="sc">\\</span><span class="st">alpha$&quot;</span>,<span class="st">&quot;$</span><span class="sc">\\</span><span class="st">frac{1}{2}$&quot;</span>))</span>
 <span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a>combined_row <span class="ot">=</span> first_block <span class="sc">+</span> second_block</span>
 <span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a>combined_row</span>
-<span id="cb14-5"><a href="#cb14-5" tabindex="-1"></a><span class="co">#&gt; % created using textab on Sun Mar 26 19:16:20 2023</span></span>
+<span id="cb14-5"><a href="#cb14-5" tabindex="-1"></a><span class="co">#&gt; % created using textab on Tue Apr 25 07:41:52 2023</span></span>
 <span id="cb14-6"><a href="#cb14-6" tabindex="-1"></a><span class="co">#&gt; \begin{tabular}{rr}</span></span>
 <span id="cb14-7"><a href="#cb14-7" tabindex="-1"></a><span class="co">#&gt; hello &amp; world \\</span></span>
 <span id="cb14-8"><a href="#cb14-8" tabindex="-1"></a><span class="co">#&gt; $\alpha$ &amp; $\frac{1}{2}$ \\</span></span>
@@ -488,7 +488,7 @@ line, horizontal concatenation will be performed first:</p>
 <span id="cb15-3"><a href="#cb15-3" tabindex="-1"></a>third_block <span class="ot">=</span> <span class="fu">TexRow</span>(<span class="fu">c</span>(<span class="st">&quot;$</span><span class="sc">\\</span><span class="st">frac{1}{2}$&quot;</span>))</span>
 <span id="cb15-4"><a href="#cb15-4" tabindex="-1"></a>combined_row <span class="ot">=</span> first_block <span class="sc">+</span> second_block <span class="sc">/</span> third_block</span>
 <span id="cb15-5"><a href="#cb15-5" tabindex="-1"></a>combined_row</span>
-<span id="cb15-6"><a href="#cb15-6" tabindex="-1"></a><span class="co">#&gt; % created using textab on Sun Mar 26 19:16:20 2023</span></span>
+<span id="cb15-6"><a href="#cb15-6" tabindex="-1"></a><span class="co">#&gt; % created using textab on Tue Apr 25 07:41:52 2023</span></span>
 <span id="cb15-7"><a href="#cb15-7" tabindex="-1"></a><span class="co">#&gt; \begin{tabular}{rr}</span></span>
 <span id="cb15-8"><a href="#cb15-8" tabindex="-1"></a><span class="co">#&gt; hello &amp; world \\</span></span>
 <span id="cb15-9"><a href="#cb15-9" tabindex="-1"></a><span class="co">#&gt; $\alpha$ &amp; $\frac{1}{2}$ \\</span></span>
@@ -500,7 +500,7 @@ line, horizontal concatenation will be performed first:</p>
 <p>To add 3pt of space between two rows:</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="fu">TexRow</span>(<span class="fu">c</span>(<span class="st">&quot;hello&quot;</span>, <span class="st">&quot;world&quot;</span>), <span class="at">space=</span><span class="dv">3</span>) <span class="sc">+</span></span>
 <span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a>  <span class="fu">TexRow</span>(<span class="fu">c</span>(<span class="st">&#39;$</span><span class="sc">\\</span><span class="st">alpha$&#39;</span>,<span class="st">&#39;$</span><span class="sc">\\</span><span class="st">frac{1}{2}$&#39;</span>))</span>
-<span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Sun Mar 26 19:16:20 2023</span></span>
+<span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a><span class="co">#&gt; % created using textab on Tue Apr 25 07:41:52 2023</span></span>
 <span id="cb16-4"><a href="#cb16-4" tabindex="-1"></a><span class="co">#&gt; \begin{tabular}{rr}</span></span>
 <span id="cb16-5"><a href="#cb16-5" tabindex="-1"></a><span class="co">#&gt; hello &amp; world \\[3pt]</span></span>
 <span id="cb16-6"><a href="#cb16-6" tabindex="-1"></a><span class="co">#&gt; $\alpha$ &amp; $\frac{1}{2}$ \\</span></span>
@@ -512,9 +512,9 @@ line, horizontal concatenation will be performed first:</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="fu">TexRow</span>(<span class="fu">c</span>(<span class="st">&quot;hello&quot;</span>, <span class="st">&quot;world&quot;</span>), <span class="at">cspan=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>)) <span class="sc">+</span> </span>
 <span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a>  <span class="fu">TexMidrule</span>() <span class="sc">+</span></span>
 <span id="cb17-3"><a href="#cb17-3" tabindex="-1"></a>  <span class="fu">TexRow</span>(<span class="fu">c</span>(<span class="st">&#39;$</span><span class="sc">\\</span><span class="st">alpha$&#39;</span>,<span class="st">&#39;$</span><span class="sc">\\</span><span class="st">frac{1}{2}$&#39;</span>,<span class="st">&#39;$</span><span class="sc">\\</span><span class="st">sqrt{</span><span class="sc">\\</span><span class="st">frac{2}{3}}$&#39;</span>))</span>
-<span id="cb17-4"><a href="#cb17-4" tabindex="-1"></a><span class="co">#&gt; % created using textab on Sun Mar 26 19:16:20 2023</span></span>
+<span id="cb17-4"><a href="#cb17-4" tabindex="-1"></a><span class="co">#&gt; % created using textab on Tue Apr 25 07:41:52 2023</span></span>
 <span id="cb17-5"><a href="#cb17-5" tabindex="-1"></a><span class="co">#&gt; \begin{tabular}{rrr}</span></span>
-<span id="cb17-6"><a href="#cb17-6" tabindex="-1"></a><span class="co">#&gt; hello &amp; \multicolumn{2}{r}{world} \\</span></span>
+<span id="cb17-6"><a href="#cb17-6" tabindex="-1"></a><span class="co">#&gt; hello &amp; \multicolumn{2}{c}{world} \\</span></span>
 <span id="cb17-7"><a href="#cb17-7" tabindex="-1"></a><span class="co">#&gt; \midrule </span></span>
 <span id="cb17-8"><a href="#cb17-8" tabindex="-1"></a><span class="co">#&gt; $\alpha$ &amp; $\frac{1}{2}$ &amp; $\sqrt{\frac{2}{3}}$ \\</span></span>
 <span id="cb17-9"><a href="#cb17-9" tabindex="-1"></a><span class="co">#&gt; \end{tabular}</span></span></code></pre></div>
@@ -522,9 +522,9 @@ line, horizontal concatenation will be performed first:</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="fu">TexRow</span>(<span class="fu">c</span>(<span class="st">&quot;hello&quot;</span>, <span class="st">&quot;world&quot;</span>), <span class="at">cspan=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>)) <span class="sc">+</span> </span>
 <span id="cb18-2"><a href="#cb18-2" tabindex="-1"></a>  <span class="fu">TexMidrule</span>(<span class="fu">list</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">1</span>), <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">3</span>))) <span class="sc">+</span></span>
 <span id="cb18-3"><a href="#cb18-3" tabindex="-1"></a>  <span class="fu">TexRow</span>(<span class="fu">c</span>(<span class="st">&#39;$</span><span class="sc">\\</span><span class="st">alpha$&#39;</span>,<span class="st">&#39;$</span><span class="sc">\\</span><span class="st">frac{1}{2}$&#39;</span>,<span class="st">&#39;$</span><span class="sc">\\</span><span class="st">sqrt{</span><span class="sc">\\</span><span class="st">frac{2}{3}}$&#39;</span>))</span>
-<span id="cb18-4"><a href="#cb18-4" tabindex="-1"></a><span class="co">#&gt; % created using textab on Sun Mar 26 19:16:20 2023</span></span>
+<span id="cb18-4"><a href="#cb18-4" tabindex="-1"></a><span class="co">#&gt; % created using textab on Tue Apr 25 07:41:52 2023</span></span>
 <span id="cb18-5"><a href="#cb18-5" tabindex="-1"></a><span class="co">#&gt; \begin{tabular}{rrr}</span></span>
-<span id="cb18-6"><a href="#cb18-6" tabindex="-1"></a><span class="co">#&gt; hello &amp; \multicolumn{2}{r}{world} \\</span></span>
+<span id="cb18-6"><a href="#cb18-6" tabindex="-1"></a><span class="co">#&gt; hello &amp; \multicolumn{2}{c}{world} \\</span></span>
 <span id="cb18-7"><a href="#cb18-7" tabindex="-1"></a><span class="co">#&gt;  \cmidrule(lr){1-1} \cmidrule(lr){2-3} </span></span>
 <span id="cb18-8"><a href="#cb18-8" tabindex="-1"></a><span class="co">#&gt; $\alpha$ &amp; $\frac{1}{2}$ &amp; $\sqrt{\frac{2}{3}}$ \\</span></span>
 <span id="cb18-9"><a href="#cb18-9" tabindex="-1"></a><span class="co">#&gt; \end{tabular}</span></span></code></pre></div>

@@ -7,7 +7,7 @@
 TexRow(
   value,
   cspan = rep(1, length(value)),
-  position = "r",
+  position = "c",
   surround = "\%s",
   space = 0,
   dec = 3,
@@ -22,7 +22,7 @@ TexRow(
 
 \item{cspan}{(integer). If greater than 1, \verb{multicolumn\{cspan\}\{position\}\{value\}} will be used. For example, cspan=c(1,2,1) means that the second entry of \code{value} should span 2 columns. Default is cspan = rep(1, length(value)).}
 
-\item{position}{(character). If cspan > 1, \verb{multicolumn\{cspan\}\{position\}\{value\}} will be used. For example, position=c("l","c","r") means that the second entry of \code{value} should be centered. Default is "r".}
+\item{position}{(character). If cspan > 1, \verb{multicolumn\{cspan\}\{position\}\{value\}} will be used. For example, position=c("l","c","r") means that the second entry of \code{value} should be centered. Default is "c".}
 
 \item{surround}{(character). This will be applied to the value as sprintf(surround, value), so surround must contain the "\%s" placeholder. Default is "\%s".}
 
@@ -39,7 +39,7 @@ TexRow(
 \item{pvalues}{(numeric). Only relevant if \code{value} is numeric. If not NULL, must be numeric. If less than 0.1, a star will be added to the end of each entry of \code{value}. If less than 0.05, a second star will be appended. If less than 0.01, a third star  will be appended. If scalar, the same p-value will be assumed for all entries of \code{value}. If vector, must be the same length as \code{value}.}
 }
 \value{
-The output is a textab block. A block can be an entire row, or part of a row, of a LaTeX tabular. A block can be concatenated horizontally with another block using the minus sign (-) or stacked vertically with another block using the plus sign (+).
+The output is a textab block.
 }
 \description{
 This function creates a row of a LaTeX table.
